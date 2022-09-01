@@ -1,0 +1,78 @@
+[
+  {
+    "id": 0,
+    "image": "portfolio.png",
+    "title": "Software Engineer Portfolio",
+    "date": "August 2022",
+    "subtitle": "Portfolio Website",
+    "description": "Responsive portfolio website I designed and built from scratch using React and react-bootstrap.",
+    "firstLink": "https://github.com/angadvirk/PortfolioWebsite", 
+    "firstLinkIcon": "github",
+    "secondLink": "",
+    "secondLinkName": "Demo"
+  },
+  {
+    "id": 1,
+    "image": "travel.png",
+    "title": "Travel Stories",
+    "date": "July 2022",
+    "subtitle": "Winning Hackathon Submission",
+    "description": "The 'Travel Stories' app was built by engineers Pawan Kumar, Ankit Singh and Angad Virk (me), and designer Maulika Lisa in two days for the 2022 MakeMyTrip Hackathon. The idea was proposed by product manager Anuj Kumar, and we ended up winning the First Prize out of 30 teams in the Hackathon.",
+    "firstLink": "", 
+    "routerLink": "/article",
+    "routerLinkName": "The Story"
+  },
+  {
+    "id": 2,
+    "image": "weather.png",
+    "title": "Weather App (iOS)",
+    "date": "December 2021",
+    "subtitle": "Course Final Project",
+    "description": "A neat iOS App built using SwiftUI. The user enters a location, and the App presents weather information for that location to the user in a clean-looking UI that is easy to parse.",
+    "firstLink": "https://github.com/angadvirk/WeatherApp-iOS", 
+    "firstLinkIcon": "github",
+    "secondLink": "/assets/weather-video.mp4",
+    "secondLinkName": "Demo"
+  },
+  {
+    "id": 3,
+    "image": "siitch.png",
+    "title": "Siitch",
+    "date": "September - December 2021",
+    "subtitle": "Project Management for a Startup",
+    "description": "I served as project manager for Siitch in late 2021. Together, our team of 8 built out the Compare Tool, Calculator Tool, and Camera Tool for the iOS App using React Native, over the course of 3 months. This included image recognition using ML and Firebase Database integration.",
+    "firstLink": "", 
+    "secondLink": "/assets/siitch-demo.mov",
+    "secondLinkName": "Demo",
+    "thirdLink": "https://www.siitch.com/",
+    "thirdLinkName": "Website"
+  },
+  {
+    "id": 4,
+    "image": "timer.png",
+    "title": "Get-It-Done Timer",
+    "date": "March - April 2021",
+    "subtitle": "JavaScript Study Timer",
+    "description": "Simple study timer built using HTML, CSS & JavaScript. Inspiration: the Pomodoro focus technique.",
+    "firstLink": "https://github.com/angadvirk/GetItDoneTimer", 
+    "firstLinkIcon": "github",
+    "secondLink": "https://angadvirk.github.io/Projects/GetItDoneTimer/index.html",
+    "secondLinkName": "App"
+  },
+  {
+    "id": 5,
+    "image": "foxdash.png",
+    "title": "FoxDash",
+    "date": "January - February 2021",
+    "subtitle": "2D Platformer Game (Unity)",
+    "description": "A 2D Platformer Game made in Unity. Everything done from scratch by me, except artwork, which is from the Unity Asset Store.",
+    "firstLink": "https://github.com/angadvirk/FoxDash", 
+    "firstLinkIcon": "github",
+    "secondLink": "https://www.dropbox.com/s/8vlgl00h0vagbfj/FoxDash1.1_setup_x86.exe?dl=1",
+    "secondLinkName": "Windows (.exe)",
+    "secondLinkIcon": "windows",
+    "thirdLink": "https://www.dropbox.com/s/d1bnlxe65cy6y22/FoxDash1.1.dmg?dl=1",
+    "thirdLinkName": "Mac (.dmg)",
+    "thirdLinkIcon": "apple"
+  }
+]
