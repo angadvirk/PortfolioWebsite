@@ -71,44 +71,27 @@ export default function Home() {
 
         </div>
         <Row>
-          <Col lg={4}>
-            <Project 
-              image={projectData[0].image}
-              title={projectData[0].title}
-              date={projectData[0].date}
-              subtitle={projectData[0].subtitle}
-              description={projectData[0].description}
-              firstLink={projectData[0].firstLink}
-              firstLinkIcon={projectData[0].firstLinkIcon}
-              secondLink={projectData[0].secondLink}
-              secondLinkName={projectData[0].secondLinkName}
-            />
-          </Col>
-          <Col lg={4}>
-            <Project 
-              image={projectData[1].image}
-              title={projectData[1].title}
-              date={projectData[1].date}
-              subtitle={projectData[1].subtitle}
-              description={projectData[1].description}
-              firstLink={projectData[1].firstLink}
-              routerLink={projectData[1].routerLink}
-              routerLinkName={projectData[1].routerLinkName}
-            />
-          </Col>
-          <Col lg={4}>
-            <Project 
-              image={projectData[2].image}
-              title={projectData[2].title}
-              date={projectData[2].date}
-              subtitle={projectData[2].subtitle}
-              description={projectData[2].description}
-              firstLink={projectData[2].firstLink}
-              firstLinkIcon={projectData[2].firstLinkIcon}
-              secondLink={projectData[2].secondLink}
-              secondLinkName={projectData[2].secondLinkName}
-            />
-          </Col>
+          {projectData.filter(project => (projectData.indexOf(project) < 3)).map(project => (
+            <Col lg={4} key={project.id}>
+              <Project 
+                image={project.image}
+                title={project.title}
+                date={project.date}
+                subtitle={project.subtitle}
+                description={project.description}
+                firstLink={project.firstLink}
+                firstLinkIcon={project.firstLinkIcon}
+                secondLink={project.secondLink}
+                secondLinkName={project.secondLinkName}
+                secondLinkIcon={project.secondLinkIcon}
+                thirdLink={project.thirdLink}
+                thirdLinkName={project.thirdLinkName}
+                thirdLinkIcon={project.thirdLinkIcon}
+                routerLink={project.routerLink}
+                routerLinkName={project.routerLinkName}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
 

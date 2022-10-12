@@ -1,6 +1,16 @@
 [
   {
     "id": 0,
+    "image": "nodeblog.png",
+    "title": "Angad's Blog",
+    "date": "September - October 2022",
+    "subtitle": "Blog Website",
+    "description": "A simple blog website built on Node.js, Express and MongoDB, that allows users to create and delete blog posts.",
+    "firstLink": "https://github.com/angadvirk/NodeBlog", 
+    "firstLinkIcon": "github"
+  },
+  {
+    "id": 1,
     "image": "portfolio.png",
     "title": "Software Engineer Portfolio",
     "date": "August 2022",
@@ -8,11 +18,11 @@
     "description": "Responsive portfolio website I designed and built from scratch using React and react-bootstrap.",
     "firstLink": "https://github.com/angadvirk/PortfolioWebsite", 
     "firstLinkIcon": "github",
-    "secondLink": "",
-    "secondLinkName": "Demo"
+    "secondLink": "/",
+    "secondLinkName": "Website"
   },
   {
-    "id": 1,
+    "id": 2,
     "image": "travel.png",
     "title": "Travel Stories",
     "date": "July 2022",
@@ -23,7 +33,7 @@
     "routerLinkName": "The Story"
   },
   {
-    "id": 2,
+    "id": 3,
     "image": "weather.png",
     "title": "Weather App (iOS)",
     "date": "December 2021",
@@ -35,7 +45,7 @@
     "secondLinkName": "Demo"
   },
   {
-    "id": 3,
+    "id": 4,
     "image": "siitch.png",
     "title": "Siitch",
     "date": "September - December 2021",
@@ -48,7 +58,7 @@
     "thirdLinkName": "Website"
   },
   {
-    "id": 4,
+    "id": 5,
     "image": "timer.png",
     "title": "Get-It-Done Timer",
     "date": "March - April 2021",
@@ -56,11 +66,11 @@
     "description": "Simple study timer built using HTML, CSS & JavaScript. Inspiration: the Pomodoro focus technique.",
     "firstLink": "https://github.com/angadvirk/GetItDoneTimer", 
     "firstLinkIcon": "github",
-    "secondLink": "https://angadvirk.github.io/Projects/GetItDoneTimer/index.html",
+    "secondLink": "/get-it-done-timer/index.html",
     "secondLinkName": "App"
   },
   {
-    "id": 5,
+    "id": 6,
     "image": "foxdash.png",
     "title": "FoxDash",
     "date": "January - February 2021",
