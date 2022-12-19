@@ -1,31 +1,20 @@
-import { useLayoutEffect } from "react";
-
 // Components
-import MyNav from "../components/MyNav";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
+import Project from "./Project";
 
 // React Bootstrap Components
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 // Projects JSON
 import projectData from "../projects.json";
 
-export default function Projects() {
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0) // scroll to top when route opened
-  });
+export default function Projects({ setShowArticle, scrollToProjects }) {
 
   return (
-    <div>
-      <MyNav />
-      <Container className="bg-secondary p-5" fluid>
+      <>
         <div className="text-white">
-          <h1 className="display-5">Projects Portfolio</h1>
-          <p className="lead mb-5">
+          <h1 className="display-5 my-monospaced">Project Archive</h1>
+          <p className="lead mb-5 my-sans-serif">
             A more exhaustive list of the projects I've worked on. Includes school and work projects, spare-time-tinkers, and everything in between.
             {' '}
           </p>
@@ -51,8 +40,10 @@ export default function Projects() {
                 thirdLink={project.thirdLink}
                 thirdLinkName={project.thirdLinkName}
                 thirdLinkIcon={project.thirdLinkIcon}
-                routerLink={project.routerLink}
-                routerLinkName={project.routerLinkName}
+                articleLink={project.articleLink}
+                articleLinkName={project.articleLinkName}
+                setShowArticle={setShowArticle}
+                scrollToProjects={scrollToProjects}
               />
           ))}
           </Col>
@@ -74,8 +65,10 @@ export default function Projects() {
                 thirdLink={project.thirdLink}
                 thirdLinkName={project.thirdLinkName}
                 thirdLinkIcon={project.thirdLinkIcon}
-                routerLink={project.routerLink}
-                routerLinkName={project.routerLinkName}
+                articleLink={project.articleLink}
+                articleLinkName={project.articleLinkName}
+                setShowArticle={setShowArticle}
+                scrollToProjects={scrollToProjects}
               />
           ))}
           </Col>
@@ -97,8 +90,10 @@ export default function Projects() {
                 thirdLink={project.thirdLink}
                 thirdLinkName={project.thirdLinkName}
                 thirdLinkIcon={project.thirdLinkIcon}
-                routerLink={project.routerLink}
-                routerLinkName={project.routerLinkName}
+                articleLink={project.articleLink}
+                articleLinkName={project.articleLinkName}
+                setShowArticle={setShowArticle}
+                scrollToProjects={scrollToProjects}
               />
           ))}
           </Col>
@@ -122,15 +117,15 @@ export default function Projects() {
                   thirdLink={project.thirdLink}
                   thirdLinkName={project.thirdLinkName}
                   thirdLinkIcon={project.thirdLinkIcon}
-                  routerLink={project.routerLink}
-                  routerLinkName={project.routerLinkName}
+                  articleLink={project.articleLink}
+                  articleLinkName={project.articleLinkName}
+                  setShowArticle={setShowArticle}
+                  scrollToProjects={scrollToProjects}
                 />
               </Col>
             ))}
           </Row>
         </div>
-      </Container>
-      <Footer />
-    </div>
+      </>
   )
 }

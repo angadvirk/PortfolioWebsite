@@ -1,31 +1,51 @@
 import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import { LinkContainer } from "react-router-bootstrap";
-import logo from '../assets/logo.png';
+import Container from "react-bootstrap/Container";
+import logo from '../assets/logo-white.png';
+// import { LinkContainer } from "react-router-bootstrap";
 
 export default function MyNav(props) {
   return (
-    <Navbar ref={props.customRef} className="shadow-sm" collapseOnSelect expand="sm" bg="light" variant="light" sticky="top">
+    <Navbar ref={props.customRef} className="shadow my-bg-tertiary" collapseOnSelect expand="sm" variant="light" sticky="top">
       <Container>
-        <LinkContainer to="/">
-          <Navbar.Brand>
-            <img
-              src={logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="Angad Virk Logo"
-            />
-          </Navbar.Brand>
-        </LinkContainer>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-        <Nav>
-          <Nav.Link href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resumé</Nav.Link>
-          <LinkContainer to="/projects"><Nav.Link>Projects</Nav.Link></LinkContainer>
-        </Nav>
-        </Navbar.Collapse>
+        {/* <LinkContainer to="/"> */}
+        <Navbar.Brand>
+          {/* <a href="/"> */}
+          <img
+            src={logo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top my-logo"
+            alt="Angad Virk Logo"
+            onClick={() => props.scrollToTop()}
+          />
+          {/* </a> */}
+        </Navbar.Brand>
+        {/* </LinkContainer> */}
+        {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end"> */}
+        <div className="my-nav">
+        <Nav.Link className="my-monospaced mylink my-nav-link" href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resumé</Nav.Link>
+        <Nav.Link className="my-monospaced mylink my-nav-link" onClick={() => {
+          props.scrollToProjects();
+          if (props.showArticle) {
+            // to fix problem where window wasn't scrolling up if 
+            // article was shown and the 'Projects' nav link was clicked while curr scroll position was way down
+            setTimeout(() => {
+              props.setShowAllProjects(true);
+              props.setShowArticle(false);
+            }, 200);
+          }
+          else {
+            props.setShowAllProjects(true);
+            props.setShowArticle(false);
+          }
+        }}>Projects</Nav.Link>
+        <Nav.Link className="my-monospaced mylink my-nav-link" onClick={() => {
+          props.scrollToSkills();
+        }}>Skills</Nav.Link>
+        </div>
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   )

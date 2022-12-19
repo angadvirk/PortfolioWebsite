@@ -1,6 +1,18 @@
 [
   {
     "id": 0,
+    "image": "portfolio.png",
+    "title": "Software Engineer Portfolio",
+    "date": "August 2022 - December 2022",
+    "subtitle": "Portfolio Website",
+    "description": "Responsive portfolio website I designed and built from scratch using React and react-bootstrap. Added integration with Spotify API.",
+    "firstLink": "https://github.com/angadvirk/PortfolioWebsite", 
+    "firstLinkIcon": "github",
+    "secondLink": "/",
+    "secondLinkName": "Website"
+  },
+  {
+    "id": 1,
     "image": "nodeblog.png",
     "title": "Angad's Blog",
     "date": "September - October 2022",
@@ -10,18 +22,6 @@
     "firstLinkIcon": "github"
   },
   {
-    "id": 1,
-    "image": "portfolio.png",
-    "title": "Software Engineer Portfolio",
-    "date": "August 2022",
-    "subtitle": "Portfolio Website",
-    "description": "Responsive portfolio website I designed and built from scratch using React and react-bootstrap.",
-    "firstLink": "https://github.com/angadvirk/PortfolioWebsite", 
-    "firstLinkIcon": "github",
-    "secondLink": "/",
-    "secondLinkName": "Website"
-  },
-  {
     "id": 2,
     "image": "travel.png",
     "title": "Travel Stories",
@@ -29,8 +29,8 @@
     "subtitle": "Winning Hackathon Submission",
     "description": "The 'Travel Stories' app was built by engineers Pawan Kumar, Ankit Singh and Angad Virk (me), and designer Maulika Lisa in two days for the 2022 MakeMyTrip Hackathon. The idea was proposed by product manager Anuj Kumar, and we ended up winning the First Prize out of 30 teams in the Hackathon.",
     "firstLink": "", 
-    "routerLink": "/article",
-    "routerLinkName": "The Story"
+    "articleLink": "/article",
+    "articleLinkName": "The Story"
   },
   {
     "id": 3,
