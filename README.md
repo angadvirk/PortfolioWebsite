@@ -5,13 +5,12 @@ Software Engineer Portfolio Website designed and built by me using React and Boo
 
 ## What I Learned:
 * Using react-bootstrap in a react application to easily make and style a responsive website.
-* Creating a multi-page react app using react router (v6).
+* Spotify API integration that pulls data from my Spotify account to display my 'Last Listened To' song.
+* Fundamentals of Web Design - color scheme, typography, spacing, structure.
+* Various cat facts 😉
 
 ## To Do in Future Versions:
-* Change from using HashRouter to a separate solution that fixes direct URL entry and hard refreshes but doesn't have the hash in the URL
+* Find a solution that fixes direct URL entry and hard refreshes but doesn't have the hash in the URL.
 * Create a separate Article component and infrastructure instead of the current hardcoded Travel Stories article, so you can create a blog part of the website. 
-* Automate API Call to zen quotes once per day to get quote cache for your site, and store it in a json file. Use GitHub Actions for this? CRON?
-* Add 'Last Listened To' section for fun (use Spotify API).
-* Make skill progress bars animate when scroll position reaches them.
-* Create two tabs for 'Skills' section, one for technical skills and one for soft skills.
-* Integrate with GitHub API to show interesting information in Project Boxes.
+* Create multiple tabs for 'Skills' section, to show more skills.
+* Integrate with GitHub API to show interesting information in Project Boxes, like languages used, etc.
