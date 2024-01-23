@@ -7,7 +7,7 @@ Software Engineer Portfolio Website designed and built by me using React and Boo
 * Using react-bootstrap in a react application to easily make and style a responsive website.
 * Spotify API integration that pulls data from my Spotify account to display my 'Last Listened To' song.
 * Fundamentals of Web Design - color scheme, typography, spacing, structure.
-* Various cat facts 😉
+* Various cat facts.
 
 ## To Do in Future Versions:
 * Set up Browser Router properly for GitHub Pages for future expansion of the website with additional routes, etc.
